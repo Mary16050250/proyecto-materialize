@@ -47,14 +47,26 @@
   });
 
   // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
-  // var collapsibleElem = document.querySelector('.collapsible');
-  // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+  var collapsibleElem = document.querySelector('.collapsible');
+   var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
 
   // Or with jQuery
 
-  $(document).ready(function(){
-    $('.sidenav').sidenav();
+ $(document).ready(function() {
+    $('select').material_select();
+
+    // for HTML5 "required" attribute
+    $("select[required]").css({
+      display: "inline",
+      height: 0,
+      padding: 0,
+      width: 0
+    });
   });
+
+
+
+
 
   
 

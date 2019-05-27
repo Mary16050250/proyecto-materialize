@@ -39,8 +39,6 @@
         <ul class="right hide-on-med-and-down">
           <li ><a class="enlace-menu white-text" href="home.html">Home</a></li>
         </ul>
-          
-
           <ul id="nav-mobile" class="sidenav">
             <li ><a href="login.html">Salir</a></li> 
           <li ><a href="Reportes.html">Registrar</a></li>
@@ -62,38 +60,45 @@
     <div class="col s12 m4 l2"><img src="Imagenes/servicios.png" alt="logoLodantec"></div>
   </div>
 
-  <div class="row">
-    <div class="input-field col s6">
-      <input value="" id="Codigo" type="text" class="validate">
-      <label class="active" for="first_name2">Codigo del Servicio</label>
-    </div>
-    <div class="input-field col s6">
-      <input value="" id="nombre" type="text" class="validate">
-      <label class="active" for="first_name2">Servicio</label>
-    </div>
-    <div class="input-field col s6">
-      <input value="" id="costo" type="text" class="validate">
-      <label class="active" for="first_name2">Categoria</label>
-    </div>
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+       <div class="input-field col s6">
+        <input id="nombreS" name="nombreS" type="text" class="validate" required="" aria-required="true">
+        <label for="nombreS">Nombre del Servicio</label>
+      </div>
+       <div class="input-field col s6">
+        <input id="servicio" name="servicio" type="text" class="validate" required="" aria-required="true">
+        <label for="servicio">Servicio</label>
+      </div>
 
-    <div class="input-field col s6">
-      <input value="" id="costo" type="text" class="validate">
-      <label class="active" for="first_name2">Descripcion</label>
-    </div>
+        <div class="input-field col s6">
+        <input id="categoria" name="categoria" type="text" class="validate" required="" aria-required="true">
+        <label for="categoria">Categoria</label>
+      </div>
 
-    <div class="input-field col s6">
-      <input value="" id="costo" type="text" class="validate">
-      <label class="active" for="first_name2">Costo</label>
-    </div>
+       <div class="input-field col s6">
+        <input id="descripcion" name="descripcion" type="text" class="validate" required="" aria-required="true">
+        <label for="descripcion">Descripcion</label>
+      </div>
 
-  <div class="right-align">
- <a onclick="M.toast({html: 'Servicio Agregado '})" class=" blue darken-3 btn"><i class="material-icons right">laptop_mac</i>Agregar Servicio </i></a>
-</div>
-</div>
+        <div class="input-field col s6">
+        <input id="costo" name="costo" type="text" class="validate" required="" aria-required="true">
+        <label for="costo">Costo</label>
+      </div>
+         </div>
+    </form>
+  </div>
+
+      <div class="right-align">
+      <div class="input-field col s12">
+        <button class="btn waves-effect blue darken-3 btn" type="active" ><i class="material-icons right">laptop_mac</i>Agregar Servicios</button>
+      </div>
+    </div>
+  </form>
 </div>
 
 <br></br>
-
 
 <div class="container">
  <table>
@@ -140,6 +145,9 @@
 
  <a onclick="M.toast({html: 'Registro Cancelado'})" class=" blue darken-3 btn"><i class="material-icons right">delete_forever</i>Cancelar</i></a>
   </div>
+</form>
+</div>
+</div>
 
 
   <br></br>

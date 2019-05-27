@@ -39,7 +39,6 @@
           <li ><a class="enlace-menu white-text" href="home.html">Home</a></li>
         </ul>
           
-
           <ul id="nav-mobile" class="sidenav">
             <li ><a href="login.html">Salir</a></li> 
           <li ><a href="Reportes.html">Registrar</a></li>
@@ -60,34 +59,48 @@
     <div class="col s12 m4 l2"><img src="Imagenes/servicios.png" alt="logoLodantec"></div>
   </div>
 
-  <div class="row">
-    <div class="input-field col s6">
-      <input value="" id="Codigo" type="text" class="validate">
-      <label class="active" for="first_name2">Codigo del Producto</label>
-    </div>
-    <div class="input-field col s6">
-      <input value="" id="nombre" type="text" class="validate">
-      <label class="active" for="first_name2">Nombre del Producto</label>
-    </div>
-    <div class="input-field col s6">
-      <input value="" id="costo" type="text" class="validate">
-      <label class="active" for="first_name2">Descripcion</label>
-    </div>
+<div class="row">
+  <form class="col s12">
+    <div class="row">
 
-    <div class="input-field col s6">
-      <input value="" id="costo" type="text" class="validate">
-      <label class="active" for="first_name2">Costo</label>
+      <div class="input-field col s6">
+        <input id="nombre" name="nombre" type="text" class="validate" required="" aria-required="true">
+        <label for="nombre">Nombre del Producto</label>
+      </div>
+
+       <div class="input-field col s6">
+        <input id="codigo" name="codigo" type="text" class="validate" required="" aria-required="true">
+        <label for="codigo">Codigo del Producto</label>
+      </div>
+
+       <div class="input-field col s6">
+        <input id="descripcion" name="descripcion" type="text" class="validate" required="" aria-required="true">
+        <label for="descripcion">Descripcion</label>
+      </div>
+
+      <div class="input-field col s6">
+        <input id="cantidad" name="cantidad" type="number" min="1" class="validate" required="" aria-required="true">
+        <label for="cantidad">Cantidad</label>
+      </div>
+
+      <div class="input-field col s6">
+        <input id="costo" name="costo" type="text" class="validate" required="" aria-required="true">
+        <label for="costo">Costo</label>
+      </div>
+       </div>
+    </form>
+  </div>
+
+       <div class="right-align">
+      <div class="input-field col s12">
+        <button class="btn waves-effect blue darken-3 btn" type="active" ><i class="material-icons right">memory</i>Agregar Producto</button>
+      </div>
     </div>
-
-
-    <div class="right-align">
- <a onclick="M.toast({html: 'Producto Agregado '})" class=" blue darken-3 btn"><i class="material-icons right">memory</i>Agregar Producto</i></a>
+  </form>
 </div>
-</div>
-</div>
 
-
-
+  <br></br>
+  
 <div class="container">
  <table >
    <thead>
@@ -128,30 +141,30 @@
 
  <br></br>
 
-    <div class="center-align">
- <a onclick="M.toast({html: 'Producto Modificado '})" class=" blue darken-3 btn"><i class="material-icons right">edit</i>Modificar</i></a>
+  <div class="center-align">
+ <a onclick="M.toast({html: 'Proveedor Modificado '})" class=" blue darken-3 btn"><i class="material-icons right">edit</i>Modificar</i></a>
 
- <a onclick="M.toast({html: 'Producto Eliminado'})" class=" blue darken-3 btn"><i class="material-icons right">delete</i>Eliminar</i></a>
-
+ <a onclick="M.toast({html: 'Proveedor Eliminado'})" class=" blue darken-3 btn"><i class="material-icons right">delete</i>Eliminar</i></a>
 
  <a onclick="M.toast({html: 'Registro Cancelado'})" class=" blue darken-3 btn"><i class="material-icons right">delete_forever</i>Cancelar</i></a>
-  </div>
+ </div>
+</form>
+</div>
+</div>
 
-  
-  <br></br>
 
+<br></br>
 
-
-    <footer class="page-footer blue darken-4">
+     <footer class="page-footer blue darken-4">
             <div class="container">
             © 2019 Copyright Lodantec
             </div>
         </footer>
 
-
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+
 
     </body>
   </html>

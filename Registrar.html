@@ -61,49 +61,62 @@
     <div class="col s12 m4 l2"><img src="Imagenes/usuario.png" alt="logoLodantec"></div>
   </div>
 
-  <div class="row">
+    <div class="row">
+  <form class="col s12">
+    <div class="row">
     <div class="input-field col s6">
-      <input value="" id="Codigo" type="text" class="validate">
-      <label class="active" for="first_name2">Nombre</label>
+        <input id="nombre" name="nombre" type="text" class="validate" required="" aria-required="true">
+        <label for="nombre">Nombre</label>
+      </div>
+    <div class="input-field col s6">
+      <input value="" id="sexo" type="text" class="validate" required="" aria-requiered="true">
+      <label class="active" for="sexo">Sexo</label>
+    </div>
+  
+    <div class="input-field col s6">
+        <input id="cantidad" name="cantidad" type="number" min="1" class="validate" required="" aria-required="true">
+        <label for="cantidad">Edad</label>
+      </div>
+
+    <div class="input-field col s6">
+      <input value="" id="direccion" type="text" class="validate" required="" aria-requiered="true">
+      <label class="active" for="direccion">Direccion</label>
     </div>
     <div class="input-field col s6">
-      <input value="" id="nombre" type="text" class="validate">
-      <label class="active" for="first_name2">Sexo</label>
+      <input value="" id="telefono" type="text" class="validate" required="" aria-requiered="true">
+      <label class="active" for="telefono">Telefono</label>
     </div>
     <div class="input-field col s6">
-      <input value="" id="costo" type="text" class="validate">
-      <label class="active" for="first_name2">Edad</label>
+      <input id="email" type="email" class="validate"required="" aria-requiered="true">
+          <label for="email">Email</label>
     </div>
 
     <div class="input-field col s6">
-      <input value="" id="costo" type="text" class="validate">
-      <label class="active" for="first_name2">Direccion</label>
+      <input value="" id="contraseña" type="password" class="validate" required="" aria-requiered="true">
+      <label class="active" for="contraseña">Contraseña</label>
     </div>
     <div class="input-field col s6">
-      <input value="" id="costo" type="text" class="validate">
-      <label class="active" for="first_name2">Telefono</label>
+      <input value="" id="pregunta" type="text" class="validate" required="" aria-requiered="true">
+      <label class="active" for="pregunta">Pregunta clave</label>
     </div>
     <div class="input-field col s6">
-      <input value="" id="costo" type="text" class="validate">
-      <label class="active" for="first_name2">Contraseña</label>
+      <input value="" id="respuesta" type="text" class="validate" required="" aria-requiered="true">
+      <label class="active" for="respuesta">Respuesta</label>
     </div>
-    <div class="input-field col s6">
-      <input value="" id="costo" type="text" class="validate">
-      <label class="active" for="first_name2">Pregunta clave</label>
-    </div>
-    <div class="input-field col s6">
-      <input value="" id="costo" type="text" class="validate">
-      <label class="active" for="first_name2">Respuesta</label>
-    </div>
+       </div>
+    </form>
+  </div>
 
   <div class="right-align">
- <a onclick="M.toast({html: 'Usuario Agregado '})" class=" blue darken-3 btn"><i class="material-icons right">memory</i>Agregar Usuario</i></a>
+      <div class="input-field col s12">
+        <button class="btn waves-effect blue darken-3 btn" type="active" ><i class="material-icons right">person_add</i>Agregar Usuario</button>
+      </div>
+    </div>
 </div>
 
-</div>
-</div>
+
+  <br></br> 
   
-
 <div class="container">
  <table >
    <thead>
@@ -138,7 +151,6 @@
 
           </tr>
            
-         
         </tbody>
  </table>
 </div>
@@ -150,9 +162,9 @@
 
  <a onclick="M.toast({html: 'Usuario Eliminado'})" class=" blue darken-3 btn"><i class="material-icons right">delete</i>Eliminar</i></a>
 
-
  <a onclick="M.toast({html: 'Registro Cancelado'})" class=" blue darken-3 btn"><i class="material-icons right">delete_forever</i>Cancelar</i></a>
   </div>
+</div>
 
   <br></br>
 
@@ -165,8 +177,5 @@
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
-
- 
     </body>
   </html>

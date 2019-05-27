@@ -62,54 +62,46 @@
     <div class="col s12 m4 l2"><img src="Imagenes/Proveedores.png" alt="logoLodantec"></div>
   </div>
 
-  <div class="row">
+ <div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="codigoP" type="text" class="validate" required="" aria-required="true">
+        <label for="codigoP">Codigo de Proveedores</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="empresa" name="empresa" type="text" class="validate" required="" aria-required="true">
+        <label for="empresa">Empresa</label>
+      </div>
 
-    <div class="input-field col s6">
-      <input value="" id="Codigo" type="text" class="validate">
-      <label class="active" for="first_name2">Codigo del Proveedor</label>
-    </div>
+       <div class="input-field col s6">
+        <input id="producto" name="producto" type="text" class="validate" required="" aria-required="true">
+        <label for="producto">Producto</label>
+      </div>
 
-    <div class="input-field col s6">
-      <input value="" id="nombre" type="text" class="validate">
-      <label class="active" for="first_name2">Proveedor</label>
-    </div>
+      <div class="input-field col s6">
+        <input id="telefono" name="costo" type="text" class="validate"  required="" aria-required="true">
+        <label for="telefono">Telefono</label>
+      </div>
 
-    <div class="input-field col s6">
-      <input value="" id="costo" type="text" class="validate">
-      <label class="active" for="first_name2">Empresa</label>
-    </div>
-
-    <div class="input-field col s6">
-      <input value="" id="costo" type="text" class="validate">
-      <label class="active" for="first_name2">Producto</label>
-    </div>
-
-    <div class="input-field col s6">
-      <input value="" id="costo" type="text" class="validate">
-      <label class="active" for="first_name2">Telefono</label>
-    </div>
-
-    <div class="input-field col s6">
-      <input value="" id="costo" type="text" class="validate">
-      <label class="active" for="first_name2">Correo electonico</label>
-    </div>
-
-    <div class="input-field col s6">
-      <input value="" id="costo" type="text" class="validate">
-      <label class="active" for="first_name2">Costo</label>
-      
-    </div>
-    
+      <div class="input-field col s6">
+        <input id="email" name="email" type="email" class="validate"  required=""  aria-required="true">
+        <label for="email">Correo Electonico</label>
+      </div>
+         </div>
+    </form>
   </div>
-  <div class="right-align">
- <a onclick="M.toast({html: 'Proveedor Agregado '})" class=" blue darken-3 btn"><i class="material-icons right">people</i>Agregar Proveedor </i></a>
-</div>
-</div>
-</div>
+  
+
+       <div class="right-align">
+      <div class="input-field col s12">
+        <button class="btn waves-effect blue darken-3 btn" type="active" ><i class="material-icons right">people</i>Agregar Proveedores</button>
+      </div>
+    </div>
+  </form>
 </div>
 
 <br></br>
-
 
 <div class="container">
  <table>
@@ -135,9 +127,6 @@
             <td>cisco_mex@gmail.com</td>
             <td>$5,000</td>
           </tr>
-
-          
-
          
         </tbody>
       </table>
@@ -150,10 +139,11 @@
 
  <a onclick="M.toast({html: 'Proveedor Eliminado'})" class=" blue darken-3 btn"><i class="material-icons right">delete</i>Eliminar</i></a>
 
-
  <a onclick="M.toast({html: 'Registro Cancelado'})" class=" blue darken-3 btn"><i class="material-icons right">delete_forever</i>Cancelar</i></a>
-  </div>
-
+ </div>
+</form>
+</div>
+</div>
 
 <br></br>
 

@@ -39,8 +39,6 @@
         <ul class="right hide-on-med-and-down">
           <li ><a class="enlace-menu white-text" href="home.html">Home</a></li>
         </ul>
-          
-
           <ul id="nav-mobile" class="sidenav">
             <li ><a href="login.html">Salir</a></li> 
           <li ><a href="Reportes.html">Registrar</a></li>
@@ -56,82 +54,73 @@
   </nav>
 
       <!--titulo-->
-
- 
 <div class="container">
   <div class="row center">
-    <h3 class="col s12 m8 l10">Ventas</h3>
+  <h3 class="col s12 m8 l10">Ventas</h3>
     <div class="col s12 m4 l2"><img src="Imagenes/ventas.png" alt="logoLodantec"></div>
   </div>
 
   <div class="row">
+  <form class="col s12" >
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="codigoV" type="text" class="validate" required="" aria-required="true">
+        <label for="codigoV">Codigo de Venta</label>
+      </div>
+
+      <div class="input-field col s6">
+        <input id="fecha" name="fecha" type="date" class="validate" required="" aria-required="true">
+        <label for="fecha">Fecha</label>
+      </div>
+
+
+      <div class="input-field col s6">
+        <input id="fecha" name="fecha" type="text" class="validate" required="" aria-required="true">
+        <label for="fecha">Tipo de venta</label>
+      </div>
+
     <div class="input-field col s6">
-      <input value="" id="Codigo" type="text" class="validate">
-      <label class="active" for="Codigo">Codigo de venta</label>
-   </div>
+        <input id="fecha" name="fecha" type="text" class="validate" required="" aria-required="true">
+        <label for="fecha">Producto/Servicio</label>
+      </div>
 
-   <div class="input-field col s6">
-      <input value="" id="Codigo" type="text" class="validate">
-      <label class="active" for="Codigo">Fecha</label>
-   </div>
 
-    <div class="input-field col s12">
-    <select id="cmb1">
-      <option value="" disabled selected >Seleccionar</option>
-      <option value="1">Productos</option>
-      <option value="2">Servicios</option>
-    </select>
-     <label for="cmb1">Tipo de venta</label>
-   </div>
+<div class="input-field col s6">
+        <input id="fecha" name="fecha" type="text" class="validate" required="" aria-required="true">
+        <label for="fecha">Codigo del producto</label>
+      </div>
 
-       <div class="input-field col s12">
-    <select id="cmb1">
-      <option value="" disabled selected >Seleccionar</option>
-      <option value="1">Productos</option>
-      <option value="2">Servicios</option>
-    </select>
-     <label for="cmb1">Producto/Servicio</label>
-   </div>
+      
 
-      <div class="input-field col s12">
-    <select id="cmb1">
-      <option value="" disabled selected >Seleccionar</option>
-      <option value="1">001</option>
-      <option value="2">002</option>
-    </select>
-     <label for="cmb1">Codigo Producto</label>
-   </div>
+     <div class="input-field col s6">
+        <input id="cantidad" name="cantidad" type="number" min="1" class="validate" required="" aria-required="true">
+        <label for="cantidad">Cantidad</label>
+      </div>
 
-     
-    <div class="input-field col s12">
-    <select id="cmb1">
-      <option value="" disabled selected >Seleccionar</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-    </select>
-     <label for="cmb1">Cantidad</label>
-   </div>
+      <div class="input-field col s6">
+        <input id="fecha" name="fecha" type="text" class="validate" required="" aria-required="true">
+        <label for="fecha">Costo</label>
+      </div>
 
-   <div class="input-field col s12">
-    <select id="cmb1">
-      <option value="" disabled selected >Seleccionar</option>
-      <option value="1">0000</option>
-      <option value="2">0000</option>
-    </select>
-     <label for="cmb1">Costo</label>
-   </div>
 
-<div class="right-align">
- <a onclick="M.toast({html: 'Producto Agregado '})" class=" blue darken-3 btn"><i class="material-icons right">add_shopping_cart</i>Agregar a Carrito </i></a>
-</div>
-</div>
-
-    </div>
+       <div class="input-field col s6">
+        <input id="fecha" name="fecha" type="text" class="validate" required="" aria-required="true">
+        <label for="fecha">Total</label>
+        </div>
+      </div>
+    </form>
   </div>
+   
+
+    
+       <div class="right-align">
+      <div class="input-field col s12">
+        <button class="btn waves-effect blue darken-3 btn" type="submit" name="action"><i class="material-icons right">shopping_cart</i>Agregar Producto</button>
+      </div>
+    </div>
+</div>
+
+  <br></br>
 
   <div class="container">
  <table>
@@ -178,11 +167,10 @@
             <td>$1,500</td>
           
           </tr>
-         
-
-          </tr>
+        
         </tbody>
       </table>
+    </div>
     </div>
 
    <br></br>
@@ -197,6 +185,8 @@
 
  <a onclick="M.toast({html: 'Venta Cancelada'})" class=" blue darken-3 btn"><i class="material-icons right">delete_forever</i>Cancelar</i></a>
   </div>
+</div>
+</div>
 
 <br></br>
 
@@ -221,7 +211,6 @@
                   <th>Total</th>
           </tr>
         </thead>
-
         <tbody>
           <tr>
             <td></td>
@@ -233,7 +222,6 @@
             <td></td>
              <td></td>
           </tr>
-        
         </tbody>
       </table>
     </div>
@@ -251,20 +239,13 @@
 
 <br></br>
 
-
-
-
  <footer class="page-footer blue darken-4">
             <div class="container">
             © 2019 Copyright Lodantec
             </div>
         </footer>
 
-    
-    
-
-
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 
