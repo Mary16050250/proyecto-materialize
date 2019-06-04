@@ -144,9 +144,18 @@
    <div class=" center-align">
     <h5>Nuestra Ubicacíon</h5>
   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7431.352226745973!2d-102.852428!3d21.363267000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa62a9ca642ec8b74!2sLodantec!5e0!3m2!1ses!2smx!4v1557456061914!5m2!1ses!2smx" width="500" height="400" frameborder="0" style="border:1" allowfullscreen></iframe>
+
+  <div id="div1"><h5>Promociones</h5+></div>
+<!--Este es el boton que activa el ajax, si se usa mas de una funcion ajax hay que cambiarles el nombre a cada una-->
+<button  class="btn waves-effect blue darken-3 btn" type="active" onclick="ajax()">Registrate</button>
+<!--esta es la division info, aqiui sale el formulario-->
+<br></br>
+<div id="info"></div>
 </div>
 
 <br></br>
+
+
 
  <footer class="page-footer blue darken-4">
          
@@ -168,11 +177,39 @@
             </div>
           </div>
         </footer>
+        <!--Este es el script de ajax, con el se manda llamar al fromulario que quieres que aparesca-->
+        <!--La parte que dice info es el id de la division donde va a mostrarse el contenido-->
+        <script>
+          function ajax(){
+            var ajaxRes = new XMLHttpRequest()
+            ajaxRes.onreadystatechange = function(){
+                if (ajaxRes.readyState == 4 && ajaxRes.status == 200) {
+                    document.getElementById("info").innerHTML=ajaxRes.responseText
+                }
+            }
+            ajaxRes.open("GET","pregunta.html",true)
+            //ajaxRes.open("GET","texto.txt",true)
+            ajaxRes.send()
+        }
+        </script>
+
+        <script>
+          $(document).ready(function(){
+            $("button").click(function(){
+              $.ajax({url: "demo_test.txt", success: function(result){
+                $("#div1").html(result);
+              }});
+            });
+          });
+        </script>
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 
+
   </body>
+
+  
 </html>

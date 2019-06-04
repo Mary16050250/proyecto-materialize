@@ -68,10 +68,14 @@
         <input id="nombre" name="nombre" type="text" class="validate" required="" aria-required="true">
         <label for="nombre">Nombre</label>
       </div>
+
     <div class="input-field col s6">
-      <input value="" id="sexo" type="text" class="validate" required="" aria-requiered="true">
-      <label class="active" for="sexo">Sexo</label>
-    </div>
+        <select name="miSelect" id="miSelect" required>
+        <option value="" selected disabled>Sexo</option>
+         <option value="1">Hombre</option>
+         <option value="2">Mujer</option>
+        </select>
+      </div>
   
     <div class="input-field col s6">
         <input id="cantidad" name="cantidad" type="number" min="1" class="validate" required="" aria-required="true">
@@ -95,10 +99,14 @@
       <input value="" id="contraseña" type="password" class="validate" required="" aria-requiered="true">
       <label class="active" for="contraseña">Contraseña</label>
     </div>
-    <div class="input-field col s6">
-      <input value="" id="pregunta" type="text" class="validate" required="" aria-requiered="true">
-      <label class="active" for="pregunta">Pregunta clave</label>
-    </div>
+      <div class="input-field col s6">
+        <select name="miSelect" id="miSelect" required="" >
+        <option value="" selected disabled>Pregunta Clave</option>
+         <option value="1">Nombre de tu mascota?</option>
+         <option value="2">Nombre de tu mejor amigo?</option>
+         <option value="3">Fecha de nacimiento de tu papa?</option>
+        </select>
+      </div>
     <div class="input-field col s6">
       <input value="" id="respuesta" type="text" class="validate" required="" aria-requiered="true">
       <label class="active" for="respuesta">Respuesta</label>

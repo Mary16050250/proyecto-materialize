@@ -9,6 +9,7 @@
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <link rel="stylesheet" type="text/css" href="css/index.css">
+      
    
  </head>
     <body>
@@ -64,8 +65,8 @@
   <form class="col s12">
     <div class="row">
        <div class="input-field col s6">
-        <input id="nombreS" name="nombreS" type="text" class="validate" required="" aria-required="true">
-        <label for="nombreS">Nombre del Servicio</label>
+        <input id="codigo" name="codigo" type="text" class="validate" required="" aria-required="true">
+        <label for="codigo">Codigo</label>
       </div>
        <div class="input-field col s6">
         <input id="servicio" name="servicio" type="text" class="validate" required="" aria-required="true">
@@ -73,8 +74,13 @@
       </div>
 
         <div class="input-field col s6">
-        <input id="categoria" name="categoria" type="text" class="validate" required="" aria-required="true">
-        <label for="categoria">Categoria</label>
+        <select name="miSelect" id="miSelect" required>
+        <option value="" selected disabled>Categoria</option>
+        <option value="1">Desarrollo web y Sistemas</option>
+        <option value="1">Soporte tecnico</option>
+        <option value="2">Diseño grafico</option>
+        <option value="2">Redes y servidores</option>
+        </select>
       </div>
 
        <div class="input-field col s6">
@@ -105,7 +111,7 @@
     <form class="col s12">
       <div class="row center ">
         <div class="input-field col s6">
-          <i class="material-icons prefix">find_in_page</i>
+          <i class="material-icons prefix">search</i>
           <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
           <label for="icon_prefix2">Buscar</label>
         </div>

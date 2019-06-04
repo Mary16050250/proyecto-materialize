@@ -9,6 +9,8 @@
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <link rel="stylesheet" type="text/css" href="css/index.css">
+
+ 
    
  </head>
     <body>
@@ -64,61 +66,79 @@
   <form class="col s12" >
     <div class="row">
       <div class="input-field col s6">
-        <input id="codigoV" type="text" class="validate" required="" aria-required="true">
+        <input id="codigoV" type="text" class="validate" required>
         <label for="codigoV">Codigo de Venta</label>
       </div>
 
       <div class="input-field col s6">
-        <input id="fecha" name="fecha" type="date" class="validate" required="" aria-required="true">
+        <input id="fecha" name="fecha" type="date" class="validate" required aria-required="true">
         <label for="fecha">Fecha</label>
       </div>
 
 
-      <div class="input-field col s6">
-        <input id="fecha" name="fecha" type="text" class="validate" required="" aria-required="true">
-        <label for="fecha">Tipo de venta</label>
-      </div>
-
     <div class="input-field col s6">
-        <input id="fecha" name="fecha" type="text" class="validate" required="" aria-required="true">
-        <label for="fecha">Producto/Servicio</label>
+        <select name="miSelect" id="miSelect" required >
+        <option value="" selected disabled>Tipo de Venta</option>
+         <option value="1">Producto</option>
+         <option value="2">Servicio</option>
+        </select>
       </div>
+  
 
-
-<div class="input-field col s6">
-        <input id="fecha" name="fecha" type="text" class="validate" required="" aria-required="true">
-        <label for="fecha">Codigo del producto</label>
+  <div class="input-field col s6">
+        <select name="miSelect" id="miSelect" required >
+        <option value="" selected disabled>Producto/Servicio</option>
+        <option value="1">Memoria RAM</option>
+        <option value="2">Disco duro</option>
+        <option value="3">Desarrollo web</option>
+        <option value="4">Servicio Tecnico</option>
+        </select>
       </div>
+  
 
-      
-
-     <div class="input-field col s6">
-        <input id="cantidad" name="cantidad" type="number" min="1" class="validate" required="" aria-required="true">
-        <label for="cantidad">Cantidad</label>
+ <div class="input-field col s6">
+        <select name="miSelect" id="miSelect" required >
+        <option value="" selected disabled>Codigo de Producto</option>
+        <option value="1">364025</option>
+        <option value="2">402596</option>
+        <option value="3">321588</option>
+        </select>
+      </div>
+  
+      <div class="input-field col s6">
+        <select name="miSelect" id="miSelect" required>
+          <option value="" selected disabled>Costo $</option>
+          <option value="1">1750</option>
+          <option value="2">900</option>
+          <option value="3">3100</option>
+        </select>
       </div>
 
       <div class="input-field col s6">
-        <input id="fecha" name="fecha" type="text" class="validate" required="" aria-required="true">
-        <label for="fecha">Costo</label>
+        <select name="miSelect" id="miSelect" required>
+          <option value="" selected disabled>Cantidad</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
       </div>
-
-
-       <div class="input-field col s6">
-        <input id="fecha" name="fecha" type="text" class="validate" required="" aria-required="true">
-        <label for="fecha">Total</label>
-        </div>
-      </div>
-  </div>
    
-
-    
+   
        <div class="right-align">
       <div class="input-field col s12">
-        <button class="btn waves-effect blue darken-3 btn" type="submit" name="action"><i class="material-icons right">shopping_cart</i>Agregar Producto</button>
+        <button class="btn waves-effect blue darken-3 btn" type="active" ><i class="material-icons right">shopping_cart</i>Agregar Producto</button>
       </div>
     </div>
+    </form>
+  </div>
 </div>
-
+</div>
   <br></br>
 
   <div class="container">
@@ -170,7 +190,7 @@
         </tbody>
       </table>
     </div>
-    </div>
+ 
 
    <br></br>
 
@@ -237,6 +257,8 @@
 </div>
 
 <br></br>
+
+
 
  <footer class="page-footer blue darken-4">
             <div class="container">
